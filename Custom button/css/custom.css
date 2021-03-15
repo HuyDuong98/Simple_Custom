@@ -1,0 +1,50 @@
+.content-view-button button {
+    display: block;
+    margin: 10px 10px;
+}
+
+.Html-view #codecss {
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.title-Custom-view {
+    display: flex;
+    justify-content: center;
+}
+
+.text-Custom-view {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.title-view {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.bg-biz4-button {
+    background-color: #563d7c;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.bg-kendo {
+    background-color: rgb(92, 229, 0);
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.color-danger {
+    color: #ff0000;
+}
+
+.text-view-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

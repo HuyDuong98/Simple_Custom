@@ -1,176 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>custom button biz4</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="./style.css">
-	<link rel="stylesheet" type="text/css" href="./custom.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom button biz4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-	<div class="container">
-		<div class="row" id="accordion">
-			<div class="col-md-7">
-				<div class="content-view-button" >
-					<button type="button" class="b-btn b-btn-primary" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-						b-btn-primary
-					</button>
-					<button type="button" class="b-btn b-btn-secondary" data-toggle="collapse" id="headingTwo" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">b-btn-secondary</button>
-					<button type="button" class="b-btn b-btn-success">b-btn-success</button>
-					<button type="button" class="b-btn b-btn-danger">b-btn-danger</button>
-					<button type="button" class="b-btn b-btn-warning">b-btn-warning</button>
-					<button type="button" class="b-btn b-btn-link">b-btn-link</button>
-					<button type="button" class="b-btn b-btn-dark"> b-btn-dark</button>
-					<button type="button" class="b-btn b-btn-light"> b-btn-light</button>
-					<button type="button" class="b-btn b-btn-info"> b-btn-info</button>
-				</div>
-			</div>
-			<div class="col-md-5">
-				<h2>SHOW HTML AND CSS IS HERE</h2>
-				<div class="collapse content-show-code " id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
-					<div >
-						<div>
-							<div class="Html-view">
-								Html<br/>
-								<code id="codehtml">
-									&#60;button type="button" class="b-btn b-btn-primary" &#62; b-btn-primary &#60;/button&#62;
-								</code>
-								<br/>
-								<br/>
-								CSS
-								<pre id="codecss">
-									<code>
-										:root {
-										--white-color: #fff;
-										--primary-color:#007bff;
-										--primary-hover-color:#2980b9;
-									}
-
-									.b-btn-primary{
-									color: var(--white-color);
-									background-color: var(--primary-color);
-									border-color: var(--primary-color);
-								}
-
-								.b-btn-primary:hover{
-								color: var(--white-color);
-								background-color: var(--primary-hover-color);
-								border-color: var(--primary-hover-color);
-							}
-
-							.b-btn-primary:focus{
-							box-shadow: var(--shadow-primary);
-						}
+    <div class="container">
+        <div class="title-Custom-view">
+            <span class="text-Custom-view">FE-Team Custom</span>
+        </div>
+        <div class="content-show-view">
+            <div class="bg-biz4-button">
+                <span class="title-view">BUTTON</span>
+            </div>
+            <div class="row" id="accordion">
+                <div class="col-md-4">
+                    <div class="content-view-button">
+                        <button type="button" class="b-btn b-btn-primary" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							b-btn-primary
+						</button>
+                        <button type="button" class="b-btn b-btn-secondary" data-toggle="collapse" id="headingTwo" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">b-btn-secondary</button>
+                        <button type="button" class="b-btn b-btn-success">b-btn-success</button>
+                        <button type="button" class="b-btn b-btn-danger">b-btn-danger</button>
+                        <button type="button" class="b-btn b-btn-warning">b-btn-warning</button>
+                        <button type="button" class="b-btn b-btn-link">b-btn-link</button>
+                        <button type="button" class="b-btn b-btn-dark"> b-btn-dark</button>
+                        <button type="button" class="b-btn b-btn-light"> b-btn-light</button>
+                        <button type="button" class="b-btn b-btn-info"> b-btn-info</button>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h4>SHOW HTML AND CSS IS HERE</h4>
+                    <div class="collapse content-show-code " id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div>
+                            <div>
+                                <div class="Html-view">
+                                    Html<br />
+                                    <code id="codehtml">
+										&#60;button type="button" class="b-btn b-btn-primary" &#62; b-btn-primary &#60;/button&#62;
+									</code>
+                                    <br />
+                                    <br /> CSS
+                                    <pre id="codecss">
+													:root {
+													--white-color: #fff;
+													--primary-color:#007bff;
+													--primary-hover-color:#2980b9;
+													}
+			
+												.b-btn-primary{
+												color: var(--white-color);
+												background-color: var(--primary-color);
+												border-color: var(--primary-color);
+												}
+			
+												.b-btn-primary:hover{
+												color: var(--white-color);
+												background-color: var(--primary-hover-color);
+												border-color: var(--primary-hover-color);
+												}
+			
+												.b-btn-primary:focus{
+												box-shadow: var(--shadow-primary);
+												}
+									</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse content-show-code " id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div>
+                            <div>
+                                <div class="Html-view">
+                                    Html<br />
+                                    <code id="codehtml">
+						&#60;button type="button" class="b-btn b-btn-secondary"&#62;b-btn-secondary&#60;/button&#62;
 					</code>
-								</pre>	
-							</div>
-
-						</div>
-
-					</div>
-			</div>	
-				<div class="collapse content-show-code " id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
-					<div >
-						<div>
-							<div class="Html-view">
-								Html<br/>
-								<code id="codehtml">
-									&#60;button type="button" class="b-btn b-btn-secondary"&#62;b-btn-secondary&#60;/button&#62;
-								</code>
-								<br/>
-								<br/>
-								CSS
-								<pre id="codecss">
-									<code>
-										:root {
-										--white-color: #fff;
-										--primary-color:#007bff;
-										--primary-hover-color:#2980b9;
+                                    <br />
+                                    <br /> CSS
+                                    <pre id="codecss">
+												:root {
+												--white-color: #fff;
+												--primary-color:#007bff;
+												--primary-hover-color:#2980b9;
+											}
+						
+											.b-btn-primary{
+											color: var(--white-color);
+											background-color: var(--primary-color);
+											border-color: var(--primary-color);
+										}
+						
+										.b-btn-primary:hover{
+										color: var(--white-color);
+										background-color: var(--primary-hover-color);
+										border-color: var(--primary-hover-color);
 									}
-
-									.b-btn-primary{
-									color: var(--white-color);
-									background-color: var(--primary-color);
-									border-color: var(--primary-color);
+						
+									.b-btn-primary:focus{
+									box-shadow: var(--shadow-primary);
 								}
+								</pre>
+                                </div>
+                            </div>
 
-								.b-btn-primary:hover{
-								color: var(--white-color);
-								background-color: var(--primary-hover-color);
-								border-color: var(--primary-hover-color);
-							}
+                        </div>
+                    </div>
+                    <input class="textBox d-none" type="text" id="" placeholder="Dont belive me?..TEST it here..;)" />
+                    <button type="button" class="b-btn b-btn-info" id="button-copy"> Copie code</button>
+                </div>
+            </div>
 
-							.b-btn-primary:focus{
-							box-shadow: var(--shadow-primary);
-						}
-					</code>
-								</pre>	
-							</div>
-
-						</div>
-
-					</div>
-			</div>	
-
-<input class="textBox d-none" type="text" id="" placeholder="Dont belive me?..TEST it here..;)" />
-<button type="button" class="b-btn b-btn-info" id="button-copy" > Copie code</button>
-
-</div>
-</div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
-<script type="text/javascript">
+            <!-- đại ở đây -->
+            <div class="bg-kendo">
+                <span class="title-view">KENDO</span>
+            </div>
+            <div class="row kendo-view" id="kendoView">
+                <div class="col-md-4">
+                    <div class="">
+                        <h4>
+                            <div class="text-view-list">
+                                <a href="#collapseListView" data-toggle="collapse" id="ListView" role="button" aria-expanded="false" aria-controls="collapseListView">
+									Kendo ListView
+								</a>
+                            </div>
+                            <div class="text-view-list">
+                                <a href="#collapseGirdView" data-toggle="collapse" id="Gridview" role="button" aria-expanded="false" aria-controls="collapseGirdView">
+									Kendo GridView
+								</a>
+                            </div>
+                            <div class="text-view-list">
+                                <a href="#collapseDropdown" data-toggle="collapse" id="DropdownList" role="button" aria-expanded="false" aria-controls="collapseDropdown">
+									Kendo DropDown List
+								</a>
+                            </div>
+                            <div class="text-view-list">
+                                <a href="#collapsePopup" data-toggle="collapse" role="button" id="Popupwindow" aria-expanded="false" aria-controls="collapsePopup">
+									Kendo Popup
+								</a>
+                            </div>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h4>SHOW HTML AND CSS IS HERE</h4>
+                    <div class="collapse content-show-code " id="collapseListView" aria-labelledby="ListView" data-parent="#kendoView">
+                        <div>
+                            <div>
+                                <div class="Html-view">
+                                    <h5>Html</h5>
+                                    <br />
+                                    <code id="codehtml">
+										&#60;div id="listElectric"&#62;&#60;/div&#62;
+									</code>
+                                    <br />
+                                    <h5>JS</h5>
+                                    <pre id="codecss">
+										<xmp>
+											var datalistElectric = new kendo.data.DataSource({
+												data: [
+													{
+														id: "1",
+														name: "EVN miền Bắc",
+														image: "Bitmap.png"
+													},
+													{
+														id: "2",
+														name: "EVN miền Nam",
+														image: "Bitmap.png"
+													}
+												]
+											});
+										
 	
-	/*function fncopiCode(element){
-		onclick="fncopiCode('#codehtml , #codecss')"
-		console.log('bấm một lần thôi !mày đã copi code của người ta rồi đó thằng ngu này :(!');
-		var $temp = $("<input>");
-		$("body").append($temp);
-		$temp.val($(element).text()).select();
-		document.execCommand("copy");
-		$temp.remove();
-	}	
-*/
-	const $document = document.querySelector.bind(document);
-	const contentCopyElm = $document(".Html-view"),
-	buttonCopyElm = $document("#button-copy");
-	const isSupported = cmd => {
-		return document.queryCommandSupported(cmd);
-	}
+											var listElectric = $("#listElectric").kendoListView({
+												dataSource: datalistElectric,
+												template: kendo.template($("#templateListElectric").html()),
+											}).data("kendoListView");
+										</xmp>
+									</pre>
+                                    <br />
+                                    <h5>CSS</h5> <br />
+                                    <span id="codecss">
+										<span class="color-danger">Lưu ý : </span>Những custom dành riêng cho kendo cần chú ý viết riêng , tránh viết chung
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse content-show-code " id="collapseGirdView" aria-labelledby="Gridview" data-parent="#kendoView">
+                        <div>
+                            <div>
+                                <div class="Html-view">
+                                    <h5>Html</h5>
+                                    <br />
+                                    <code id="codehtml">
+										&#60;div id="GridUnpaidInvoice" &#62;&#60;/div&#62;
+									</code>
+                                    <br />
+                                    <h5>JS</h5>
+                                    <pre id="codecss">
+										<xmp>
+																				var dataListUnpaidInvoice = new kendo.data.DataSource({
+																					data: [
+																					{ "Customercode": "2691133056",
+																					Address: "143 Đ. Lê Thị Nho, Trung Mỹ Tây, Q.12, Thành phố HCM",
+																					Period: "3",
+																					amount: "5.000.000 VNĐ",
+																					value: "1" },
+																					{ "Customercode": "2691133056",
+																					Address: "143 Đ. Lê Thị Nho, Trung Mỹ Tây, Q.12, Thành phố HCM",
+																					Period: "4",
+																					amount: "5.000.000 VNĐ",
+																					value: "1" },
+																					{ "Customercode": "2691133056",
+																					Address: "143 Đ. Lê Thị Nho, Trung Mỹ Tây, Q.12, Thành phố HCM",
+																					Period: "5",
+																					amount: "5.000.000 VNĐ",
+																					value: "0" }
+																					],
+																				});
+															
+																			var GridUnpaidInvoice = $("#GridUnpaidInvoice").kendoGrid({
+																				dataSource: dataListUnpaidInvoice,
+																				resizable: false,
+																				scrollable: true,
+																				columns: [
+																					{ field: "Customercode", title: 'Customer code', width: 150 },
+																					{ field: "Period", title: 'Period', width: 100 },
+																					{ field: "Address", title: 'Address', width: 500 },
+																					{ field: "amount", title: 'Amount', width: 300 },
+																					{
+																						field: "value", title: ' ', template: kendo.template($("#name-template").html()), width: 50
+																					}
+																				]
+																			}).data("kendoGrid");
 
-	buttonCopyElm.addEventListener("click", () => {
-	  // Khai báo đối tượng range và selection.
-	  const range = document.createRange(),
-	  selection = window.getSelection();
 
-	  // Xoá bỏ các vùng chọn hiện tại
-	  selection.removeAllRanges();
+																	
+																
+										</xmp>
+									</pre>
+                                    <br />
+                                    <h5>CSS</h5> <br />
+                                    <span id="codecss">
+										<span class="color-danger">Lưu ý : </span>Những custom dành riêng cho kendo cần chú ý viết riêng , tránh viết chung
+                                    <pre id="codecss">
+										<xmp>
+											.k-grid-header .k-header {
+												color: #ffffff;
+												font-weight: bold;
+												font-size: 16px;
+												line-height: 21px;
+												text-align: center;
+												padding: 0.75rem;
+												align-items: center;
+												background-color: #008443;
+											}
+											.k-grid tbody tr.k-state-hover, .k-grid tbody tr:hover {
+												background-color: #c5e5d6;
+											}
+										</xmp>
+									
+									</pre>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse content-show-code " id="collapseDropdown" aria-labelledby="DropdownList" data-parent="#kendoView">
+                        <div>
+                            <div>
+                                <div class="Html-view">
+                                    <h5>Html</h5>
+                                    <br />
+                                    <code id="codehtml">
+										&#60;input id="dropmenuleftMB"  /&#62;
+									</code>
+                                    <br />
+                                    <h5>JS</h5>
+                                    <pre id="codecss">
+							
+										//template kendo dropdown list script 
+										
+											&#60;div class="item-electric d-flex align-items-center"&#62;
+											 &#60;div class="mr-2"&#62;
+											  &#60;img class="" src="/Images/iconPayment/#:image#" /&#62;
+											  &#60;/div&#62;
+											   &#60;div&#62;&#60;span class="text-area"&#62;#:name#&#60;/span&#62;&#60;/div&#62; &#60;/div&#62;
+									
+											   <code>
 
-	  // Mô phỏng việc select - bôi đen nội dung của phần tử contentCopyElm
-	  range.selectNodeContents(contentCopyElm);
 
-	  // Thêm range trên vào selection
-	  selection.addRange(range);
+												var datalistElectricMB = new kendo.data.DataSource({
+													data: [
+														{
+															id: "1",
+															name: "EVN miền Bắc",
+															image: "Bitmap.png"
+														},
+														{
+															id: "2",
+															name: "EVN miền Nam",
+															image: "Bitmap.png"
+														}
+													]
+												});
+											
+											$("#dropmenuleftMB").kendoDropDownList({
+												filter: "contains",
+												dataTextField: "name",
+												dataValueField: "id",
+												height: 400,
+												dataSource: datalistElectricMB,
+												template: kendo.template($("#templatedropdownmenuleft").html())
+											});
+													
+										</code>
+									</pre>
+                                    <br />
+                                    <h5>CSS</h5> <br />
+                                    <span id="codecss">
+                                    <pre id="codecss">
+										<span class="color-danger">Lưu ý : </span>Những custom dành riêng cho kendo cần chú ý viết riêng , tránh viết chung <br/>
+                                    <xmp>
+                                        #dropdownlistCard-list .k-state-focused .text-gray-dark { color: #fff !important; } .list-card b, span { color: #008443; }
+                                    </xmp>
+                                    </pre>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse content-show-code " id="collapsePopup" aria-labelledby="Popupwindow" data-parent="#kendoView">
+                        <div>
+                            <div>
+                                <div class="Html-view">
+                                    <h5>Html</h5>
+                                    <br />
+                                    <code id="codehtml">
+																		&#60;div id="popupCreateWindows"&#62; &#60;div id="wndCreateContent"&#62;&#60;/div&#62; &#60;/div&#62;
+																	</code>
+                                    <br />
+                                    <h5>JS</h5>
+                                    <pre id="codecss">
+																	<xmp>
+																								$("#popupCreateWindows").kendoWindow({
+																									title: '@Html.Raw(ViewText.TITLE_CREATE_CALL_BACK_TIME)',
+																									visible: false,
+																									modal: true,
+																									maxHeight: 600,
+																									width: 500,
+																									activate: function() {
+																										// Close window when clicked outside of window
+																										$(".k-overlay").on("click",
+																											function() {
+																												kendoWindowConfirm.close();
+																											});
+																									}
+																								}).data("kendoWindow");
+																									
+																								//function call poup
+																								function fnCreateCallBack() {
+																									var url = "/CallProcessing/GetCallBackDetail";
+																									$('#wndCreateContent').load(url, function () {
+																										$("#popupCreateWindows").data("kendoWindow").center().open().element.closest(".k-window").css({ top: 20 });
+																									});
+																								}
+																	</xmp>
+									</pre>
+                                    <br />
+                                    <h5>CSS</h5> <br />
+                                    <span id="codecss">
+										<span class="color-danger">Lưu ý : </span>Những custom dành riêng cho kendo cần chú ý viết riêng , tránh viết chung
+                                    <pre id="codecss">
+								
+									</pre>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	  // Thử lệnh copy
-	  try {
-	  	if (isSupported("copy")) document.execCommand("copy");
-	  	else alert(`execCommand("copy") is not supported in your browser.`);
-	  } catch (e) {
-	  	console.log(e);
-	  }
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        /*function fncopiCode(element){																																																																																																																																																																																																																																																																																																																																																																																																																																				*/
+        const $document = document.querySelector.bind(document);
+        const contentCopyElm = $document(".Html-view"),
+            buttonCopyElm = $document("#button-copy");
+        const isSupported = cmd => {
+            return document.queryCommandSupported(cmd);
+        }
 
-	  // Sau khi copy dữ liệu xong thì xoá bỏ các vùng chọn hiện tại
-	  selection.removeAllRanges();
-	});
-</script>
+        buttonCopyElm.addEventListener("click", () => {
+            // Khai báo đối tượng range và selection.
+            const range = document.createRange(),
+                selection = window.getSelection();
+
+            // Xoá bỏ các vùng chọn hiện tại
+            selection.removeAllRanges();
+
+            // Mô phỏng việc select - bôi đen nội dung của phần tử contentCopyElm
+            range.selectNodeContents(contentCopyElm);
+
+            // Thêm range trên vào selection
+            selection.addRange(range);
+
+            // Thử lệnh copy
+            try {
+                if (isSupported("copy")) document.execCommand("copy");
+                else alert(`execCommand("copy") is not supported in your browser.`);
+            } catch (e) {
+                console.log(e);
+            }
+
+            // Sau khi copy dữ liệu xong thì xoá bỏ các vùng chọn hiện tại
+            selection.removeAllRanges();
+        });
+    </script>
 </body>
+
 </html>
