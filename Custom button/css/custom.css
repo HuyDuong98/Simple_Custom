@@ -5,8 +5,11 @@
 
 .Html-view #codecss {
     max-height: 500px;
-    /* display: flex;
-    justify-content: center; */
+}
+
+.Html-view .contentcss {
+    max-height: 500px;
+    overflow: auto;
 }
 
 .title-Custom-view {

@@ -495,7 +495,255 @@
                     <button type="button" class="b-btn b-btn-info" id="button-copy"> Copie code</button>
                 </div>
             </div>
+            <span class="title-view">CÁC KIỂU CHECK BOX</span>
+            <div class="row" id="CheckboxStyle">
+                <div class="col-md-12">
+                    <div class="d-flex content-view-checkbox">
+                        <div class="col-md-4 d-flex radio-create-account justify-content-between mt-26x">
+                            <div class="">
+                                <input type="radio" id="namecard" name="radio-group" checked>
+                                <label class="worker" for="namecard">button 1</label>
+                            </div>
+                            <div class="">
+                                <input type="radio" id="atm" name="radio-group">
+                                <label class="worker" for="atm">button 2</label>
+                            </div>
+                            <div>
+                                <a href="#collapseCheckBox" data-toggle="collapse" id="Checkbox1" role="button" aria-expanded="false" aria-controls="collapseCheckBox">
+									Xem code >>
+								</a>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="collapse content-show-code " id="collapseCheckBox" aria-labelledby="Checkbox1" data-parent="#CheckboxStyle">
+                                <div class="Html-view">
+                                    <h5>Html</h5>
+                                    <br />
+                                    <pre id="codehtml">
+                                        &#60;div class=" d-flex radio-create-account  "&#62;
+                                                &#60;div class=""&#62;
+                                                    &#60;input type="radio" id="namecard" name="radio-group" checked&#62; 
+                                                    &#60;label class="worker" for="namecard"&#62; button 1&#60;/label&#62;
+                                                &#60;/div&#62;
+                                                &#60;div class=""&#62;
+                                                    &#60;input type="radio" id="atm" name="radio-group"&#62;
+                                                    &#60;label class="worker" for="atm"&#62;button 2 &#60;/label&#62;
+                                                &#60;/div&#62;
+                                           &#60;/div&#62;
+									</pre>
+                                    <br />
+                                    <h5>CSS</h5> <br />
+                                    <span id="codecss">
+										<span class="color-danger">Lưu ý : </span>Những custom dành riêng cho cần chú ý viết riêng , tránh viết chung
+                                    </span>
+                                    <pre class="contentcss">
+                                        
+.radio-create-account [type="radio"]:checked,
+.radio-create-account [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
 
+.radio-create-account [type="radio"]:checked+label,
+.radio-create-account [type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.radio-create-account [type="radio"]:checked+label:before,
+.radio-create-account [type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #DA2128;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.radio-create-account [type="radio"]:checked+label:after,
+.radio-create-account [type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #DA2128;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.radio-create-account [type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.radio-create-account [type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.worker {
+    color: #09101D;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 10px;
+}
+
+.value-range {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.content-input-ranger {
+    margin-top: 19px;
+    margin-bottom: 30px;
+}
+
+
+/* CUSTOM CHECK BOX  */
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-md-4 d-flex justify-content-between ">
+                            <div class="positon-relative">
+                                <div class="acept-value">
+                                    <input class="w-24x h-24x" id="checkbox" name="progress" onclick="CheckValidate(this)" type="checkbox" value="" />
+                                    <label for="checkbox" class="ml-8x"><span> validatetion</span> </label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <a href="#collapseCheckBox2" data-toggle="collapse" id="Checkbox2" role="button" aria-expanded="false" aria-controls="collapseCheckBox2">
+									Xem code >>
+								</a>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="collapse content-show-code " id="collapseCheckBox2" aria-labelledby="Checkbox2" data-parent="#CheckboxStyle">
+                                <div class="Html-view">
+                                    <h5>Html</h5>
+                                    <br />
+                                    <pre id="codehtml">
+                                    &#60;div class="acept-value"&#62;
+                                        &#60;input class="w-24x h-24x" id="checkbox" name="progress"  type="checkbox" value="" /&#62;
+                                        &#60;label for="checkbox" class="ml-8x"&#62;&#60;span&#62; validatetion&#60;/span&#62; &#60;/label&#62;
+                                    &#60;/div&#62;
+									</pre>
+                                    <br />
+                                    <h5>CSS</h5> <br />
+                                    <span id="codecss">
+										<span class="color-danger">Lưu ý : </span>Những custom dành riêng cho cần chú ý viết riêng , tránh viết chung
+                                    </span>
+                                    <pre class="contentcss">
+                                        
+                                        /* CUSTOM CHECK BOX 2 */
+
+                                        .acept-value {
+                                            width: 100%;
+                                            margin: 15px auto;
+                                            position: relative;
+                                            display: block;
+                                        }
+                                        
+                                        .acept-value input[type="checkbox"] {
+                                            width: auto;
+                                            opacity: 0.00000001;
+                                            position: absolute;
+                                            left: 0;
+                                            margin-left: -20px;
+                                        }
+                                        
+                                        .acept-value label {
+                                            position: relative;
+                                        }
+                                        
+                                        .acept-value label:before {
+                                            content: '';
+                                            position: absolute;
+                                            left: 0;
+                                            top: 2px;
+                                            margin: 3px;
+                                            width: 24px;
+                                            height: 24px;
+                                            transition: transform 0.28s ease;
+                                            border-radius: 3px;
+                                            border: 2px solid #BC162D;
+                                        }
+                                        
+                                        .acept-value label:after {
+                                            content: '';
+                                            display: block;
+                                            width: 10px;
+                                            height: 6px;
+                                            border-bottom: 2px solid #fff;
+                                            border-left: 2px solid #fff;
+                                            -webkit-transform: rotate(-45deg) scale(0);
+                                            transform: rotate(-45deg) scale(0);
+                                            transition: transform ease 0.25s;
+                                            will-change: transform;
+                                            position: absolute;
+                                            top: 11px;
+                                            left: 10px;
+                                        }
+                                        
+                                        .acept-value input[type="checkbox"]:checked~label::before {
+                                            color: #fff;
+                                            background-color: #BC162D;
+                                        }
+                                        
+                                        .acept-value input[type="checkbox"]:checked~label::after {
+                                            -webkit-transform: rotate(-45deg) scale(1);
+                                            transform: rotate(-45deg) scale(1);
+                                        }
+                                        
+                                        .acept-value label {
+                                            min-height: 34px;
+                                            display: block;
+                                            padding-left: 40px;
+                                            margin-bottom: 0;
+                                            margin-left: 0;
+                                            font-weight: normal;
+                                            cursor: pointer;
+                                            vertical-align: sub;
+                                        }
+                                        
+                                        .acept-value label span {
+                                            position: absolute;
+                                            top: 50%;
+                                            -webkit-transform: translateY(-50%);
+                                            transform: translateY(-50%);
+                                        }
+                                        
+                                        .acept-value input[type="checkbox"]:focus+label::before {
+                                            outline: 0;
+                                        }
+                                        
+                                        
+                                        /* CUSTOM CHECK BOX 2 */
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- đại ở đây -->
             <div class="bg-kendo">
                 <span class="title-view">KENDO</span>
@@ -529,6 +777,12 @@
 									Kendo Stepper
 								</a>
                             </div>
+                            <div class="text-view-list">
+                                <a href="#collapseDatePicker" data-toggle="collapse" role="button" id="Datepicker" aria-expanded="false" aria-controls="collapseDatePicker">
+									Kendo Datepicker
+								</a>
+                            </div>
+
                         </h4>
                     </div>
                 </div>
@@ -677,7 +931,8 @@
 											 &#60;div class="mr-2"&#62;
 											  &#60;img class="" src="/Images/iconPayment/#:image#" /&#62;
 											  &#60;/div&#62;
-											   &#60;div&#62;&#60;span class="text-area"&#62;#:name#&#60;/span&#62;&#60;/div&#62; &#60;/div&#62;
+											   &#60;div&#62;
+                                               &#60;span class="text-area"&#62;#:name#&#60;/span&#62;&#60;/div&#62; &#60;/div&#62;
 									
 											   <code>
 
@@ -1020,6 +1275,39 @@
     background-color: #bc162d;
 }
 /*#endregion*/
+									</pre>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse content-show-code " id="collapseDatePicker" aria-labelledby="Datepicker" data-parent="#kendoView">
+                        <div>
+                            <div>
+                                <div class="Html-view">
+                                    <h5>Html</h5>
+                                    <br />
+                                    <pre id="codehtml">
+                                        &#60;div class="col-md-4 col-12 mt-4"&#62; 
+                                            &#60;span class=""&#62;&#60;/span&#62;
+                                            &#60;input class=" b-form-control bg-form" type="date" id="DateRange" name="DateRange" value="" placeholder="@ViewTextSaiSon.TITLE_DATE_RANGE" /&#62; 
+                                            &#60;span class="k-invalid-msg" data-for="DateRange"&#62;&#60;/span&#62;
+                                        &#60;/div&#62;
+                                    </pre>
+                                    <br />
+                                    <h5>JS</h5>
+                                    <pre id="codecss">
+$('#DateRange').kendoDatePicker({
+ format: "dd/MM/yyyy",
+});
+                                    									</pre>
+                                    <br />
+                                    <h5>CSS</h5> <br />
+                                    <span id="codecss">
+										<span class="color-danger">Lưu ý : </span>Những custom dành riêng cho kendo cần chú ý viết riêng , tránh viết chung
+                                    <pre id="codecss">
+                                            
+
 									</pre>
                                     </span>
                                 </div>
