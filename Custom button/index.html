@@ -91,8 +91,8 @@
                                 <div class="Html-view">
                                     Html<br />
                                     <code id="codehtml">
-						&#60;button type="button" class="b-btn b-btn-secondary"&#62;b-btn-secondary&#60;/button&#62;
-					</code>
+						                &#60;button type="button" class="b-btn b-btn-secondary"&#62;b-btn-secondary&#60;/button&#62;
+					                </code>
                                     <br />
                                     <br /> CSS
                                     <pre id="codecss">
@@ -782,7 +782,11 @@
 									Kendo Datepicker
 								</a>
                             </div>
-
+                            <div class="text-view-list">
+                                <a href="#collapseToolTip" data-toggle="collapse" role="button" id="ToolTip" aria-expanded="false" aria-controls="collapseToolTip">
+									Kendo ToolTip
+								</a>
+                            </div>
                         </h4>
                     </div>
                 </div>
@@ -1300,6 +1304,87 @@
 $('#DateRange').kendoDatePicker({
  format: "dd/MM/yyyy",
 });
+                                    									</pre>
+                                    <br />
+                                    <h5>CSS</h5> <br />
+                                    <span id="codecss">
+										<span class="color-danger">Lưu ý : </span>Những custom dành riêng cho kendo cần chú ý viết riêng , tránh viết chung
+                                    <pre id="codecss">
+                                            
+
+									</pre>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse content-show-code " id="collapseToolTip" aria-labelledby="ToolTip" data-parent="#kendoView">
+                        <div>
+                            <div>
+                                <div class="Html-view">
+                                    <h5>Html</h5>
+                                    <br />
+                                    <pre id="codehtml">
+                                        &#60;div class="item-child #:checkIsNull(Insurance)# k-display-none classContract " id="generalInfo"&#62;
+                                        &#60;div class="row item-total "&#62;
+                                            &#60;div class="col-sm-6"&#62;
+                                                &#60;span class="view-detail-span-left"&#62;@Html.Raw(ViewText.TEXT_Statement_Balance) &#60;/span&#62;
+                                            &#60;/div&#62;
+                                            &#60;div class="col-sm-6 "&#62;
+                                                &#60;span class="view-detail-span-right float-right"&#62;1234566&#60;/span&#62;
+                                            &#60;/div&#62;
+                                        &#60;/div&#62;
+                                    &#60;/div&#62;
+                                    </pre>
+                                    <br />
+                                    <h5>JS</h5>
+                                    <pre id="codecss">
+                                        $(document).ready(function () {
+                                            var tooltip = $("#generalInfo").kendoTooltip({
+                                                filter: ".item-total",
+                                                position: "top",
+                                                animation: {
+                                                    open: {
+                                                        effects: "zoom",
+                                                        duration: 150
+                                                    }
+                                                },
+                                                content: kendo.template($("#templateTooltip").html())
+                                            }).data("kendoTooltip");
+                                        });
+
+
+                                        //template tooltip
+                                        &#60;script type="text/kendo-x-tmpl" id="templateTooltip"&#62;
+                                        &#60;div class="item-template"&#62;
+                                            @*@if (Model.Product_Type.Equals("CC"))*@
+                                            @if (Model.Product_Type == Biz.C3.UtilityHelpers.ProductType.CC.ToString())
+                                            {
+                                                &#60;div class="d-flex align-items-center justify-content-between"&#62;
+                                                    &#60;div class="mr-3 font-size-15"&#62;@Html.Raw(ViewText.TITLE_OUTSTANDING_LOAN_STATEMENT): &#60;/div&#62;
+                                                    &#60;div class="font-size-17"&#62;
+                                                        11
+                                                    &#60;/div&#62;
+                                                &#60;/div&#62;
+                                                &#60;div class="d-flex align-items-center justify-content-between"&#62;
+                                                    &#60;div class="mr-3 font-size-15"&#62;@Html.Raw(ViewText.TITLE_MINIMUM_PAYMENT_AMOUNT): &#60;/div&#62;
+                                                    &#60;div class="font-size-17"&#62;11&#60;/div&#62;
+                                                &#60;/div&#62;
+                                            }
+                                            else
+                                            {
+                                                &#60;div class="d-flex align-items-center justify-content-between"&#62;
+                                                    &#60;div class="mr-3 font-size-15"&#62;@Html.Raw(ViewText.TITLE_TOTAL_AMOUNT_OVERDUE): &#60;/div&#62;
+                                                    &#60;div class="font-size-17"&#62;12&#60;/div&#62;
+                                                &#60;/div&#62;
+                                                &#60;div class="d-flex align-items-center justify-content-between"&#62;
+                                                    &#60;div class="mr-3 font-size-15"&#62;@Html.Raw(ViewText.TITLE_CURRENT_PERIOD_RECEIVABLES): &#60;/div&#62;
+                                                    &#60;div class="font-size-17"&#62; 12&#60;/div&#62;
+                                                &#60;/div&#62;
+                                            }
+                                        &#60;/div&#62;
+                                    &#60;/script&#62;
+
                                     									</pre>
                                     <br />
                                     <h5>CSS</h5> <br />
