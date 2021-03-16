@@ -5,8 +5,8 @@
 
 .Html-view #codecss {
     max-height: 500px;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }
 
 .title-Custom-view {
